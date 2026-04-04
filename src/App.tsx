@@ -1,46 +1,14 @@
-import React from 'react';
-import { FaStar } from 'react-icons/fa';
-
-const paginas = ["principal", "fotos", "videos", "contacto"]
+import { MainLayout } from './layouts/mainLayout';
+import { AppRoutes } from './routes/AppRoutes';
 
 const App = () => {
 	return (
 		<>
-		<header>
-			<h1>Learning React</h1>
-		</header>
-		<nav>
-			<ul>
-			{paginas.map((pagina, idx) => {
-				return <li key={idx}>{pagina}</li>
-			})}
-			</ul>
-		</nav>
-		<section>
-			<article id="ch6">
-                Hello ch6
-			</article>
-		</section>
-		<aside>
-			<blockquote>
-				<a href="#ch6">Chapter 6</a>
-			</blockquote>
-		</aside>
-		<footer>
-			Derechos reservados &copy; 2010-2011
-		</footer>
+            <MainLayout>
+                <AppRoutes />
+            </MainLayout>
 		</>
 	);
 };
-
-function StarRating() {
-	return <>
-		<FaStar color="red" />
-		<FaStar color="red" />
-		<FaStar color="red" />
-		<FaStar color="grey" />
-		<FaStar color="grey" />
-	</>
-}
 
 export default App;
