@@ -35,7 +35,7 @@ export const MainLayout = ({ children }: { children: ReactNode; } ) => {
 			<blockquote>
 				<a className="navitems" href="#About me">&raquo; About me</a>
                 <blockquote>
-                    <a className="navitems" href="#Professional">
+                    <a className="navitems" href="#Profession">
                         &raquo; Profession
                     </a>
                 </blockquote>

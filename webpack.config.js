@@ -12,17 +12,21 @@ module.exports = {
 		extensions: ['.ts', '.tsx', '.js', '.jsx'],
 	},
 	module: {
-		rules: [
-			{
-				test: /\.tsx?$/,
-				use: 'ts-loader',
-				exclude: /node_modules/,
-			},
-		],
-	},
-	devServer: {
-		static: './public',
-		hot: true,
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource', // <-- this handles image imports
+      },
+    ],
+  },
+  devServer: {
+    static: './public',
+    hot: true,
 		port: 9000,
 	},
 	plugins: [

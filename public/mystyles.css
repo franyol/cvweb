@@ -40,7 +40,7 @@ figcaption {
 	font-size: 1rem;
 }
 
-header, section, footer, nav, article, figure, figcaption, hgroup {
+header, section, footer, nav, figure, figcaption, hgroup {
 	display: block;
 }
 
@@ -77,6 +77,8 @@ main {
 }
 
 section {
+	display: flex;
+	justify-content: center;
 	margin: 20px;
 }
 
@@ -115,21 +117,38 @@ footer {
 	font-size: 1rem;
 }
 
-article {
-	background: #243A45;
-	border: 1px solid #798188;
+.plain {
+	flex: 1 1 400px;
 	padding: 20px;
 	margin-bottom: 15px;
+  max-width: 100vw;
 
 	color: #a5abb0;
 	line-height: 1.8;
 
 	border-radius: 12px;
-	text-align: justify;
+	text-align: left;
+}
+
+article {
+	flex: 1 1 400px;
+	background: #243A45;
+	border: 1px solid #798188;
+	padding: 20px;
+	margin-bottom: 15px;
+  max-width: 100vw;
+
+	color: #a5abb0;
+	line-height: 1.8;
+
+	border-radius: 12px;
+	text-align: left;
 }
 
 article footer {
 	text-align: right;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -156,6 +175,13 @@ article footer {
 	}
 
 	article {
+		max-width: 70vw;
+		font-size: 1.05rem;
+		line-height: 1.7;
+	}
+
+	.plain {
+		max-width: 70vw;
 		font-size: 1.05rem;
 		line-height: 1.7;
 	}
