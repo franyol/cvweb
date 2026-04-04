@@ -83,11 +83,12 @@ section {
 aside {
 	flex: 0 0 220px;
 
-	position: sticky;
+	position: fixed;
 	top: 51px;
 	left: 0;
 
 	height: calc(94vh - 51px);
+	width: 70%;
 	overflow-y: auto;
 
 	padding: 20px;
@@ -120,7 +121,6 @@ article {
 	padding: 20px;
 	margin-bottom: 15px;
 
-	font-size: 1.2rem;
 	color: #a5abb0;
 	line-height: 1.8;
 
@@ -166,5 +166,9 @@ article footer {
 
 	figcaption {
 		font-size: 0.9rem;
+	}
+
+	aside {
+		position: sticky;
 	}
 }
