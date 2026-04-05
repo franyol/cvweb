@@ -31,7 +31,10 @@ function AsideBar({ onMore }: {onMore: () => void;}) {
                             <a className="navitems" href="#Fedeanco">&raquo; Web Registry</a>
                         </blockquote>
                         <blockquote>
-                            <a className="navitems" href="#Lambda Engine">&raquo; Game Engine</a>
+                            <a className="navitems" href="#LambdaEngine">&raquo; Game Engine</a>
+                        </blockquote>
+                        <blockquote>
+                            <a className="navitems" href="#SlipperyHands">&raquo; Browser Game</a>
                         </blockquote>
                 </blockquote>
                 <blockquote>
@@ -68,7 +71,7 @@ export default function AsideBarHidable({ children }: { children: ReactNode; }) 
             <MoreButton onClick={toggleShowAside} />
             </div>
         )}
-        <main>
+        <main className="scroll-container">
             {children}
         </main>
         </div>

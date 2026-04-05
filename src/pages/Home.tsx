@@ -2,6 +2,7 @@ import React from "react";
 import AboutMe from "./homeSections/AboutMe";
 import FedeancoWebRegistry from "./homeSections/FedeancoWebRegistry";
 import LambdaEngine from "./homeSections/LambdaEngine";
+import SlipperyHands from "./homeSections/SlipperyHands";
 
 const Home = () => {
 	return (
@@ -24,13 +25,22 @@ const Home = () => {
         </section>
         <section>
 			<div className="plain">
-            <h1 id="Onging">&#8227; Ongoing</h1>
+            <h1 id="Ongoing">&#8227; Ongoing Projects</h1>
             </div>
         </section>
 
         <FedeancoWebRegistry />
 
         <LambdaEngine />
+
+        <SlipperyHands />
+
+
+        <section>
+			<div className="plain">
+            <h1 id="Completed">&#8227; Completed Projects</h1>
+            </div>
+        </section>
 		</>
 	);
 };

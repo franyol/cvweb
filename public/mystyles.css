@@ -118,6 +118,22 @@ main {
 	flex: 1;
 }
 
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* Hide scrollbar - Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar - IE/Edge */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar - Chrome, Safari */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
 section {
 	display: flex;
 	justify-content: center;
