@@ -39,6 +39,12 @@ function AsideBar({ onMore }: {onMore: () => void;}) {
                 </blockquote>
                 <blockquote>
                     <a className="navitems" href="#Completed">&raquo; Completed</a>
+                        <blockquote>
+                            <a className="navitems" href="#MARS">&raquo; MARS</a>
+                        </blockquote>
+                        <blockquote>
+                            <a className="navitems" href="#FCT">&raquo; FCT</a>
+                        </blockquote>
                 </blockquote>
             </blockquote>
 		</aside>

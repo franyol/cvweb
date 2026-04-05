@@ -3,6 +3,8 @@ import AboutMe from "./homeSections/AboutMe";
 import FedeancoWebRegistry from "./homeSections/FedeancoWebRegistry";
 import LambdaEngine from "./homeSections/LambdaEngine";
 import SlipperyHands from "./homeSections/SlipperyHands";
+import Mars from "./homeSections/MARS";
+import Kiwibot from "./homeSections/Kiwibot";
 
 const Home = () => {
 	return (
@@ -35,12 +37,15 @@ const Home = () => {
 
         <SlipperyHands />
 
-
         <section>
 			<div className="plain">
             <h1 id="Completed">&#8227; Completed Projects</h1>
             </div>
         </section>
+
+        <Mars />
+
+        <Kiwibot />
 		</>
 	);
 };

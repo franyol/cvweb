@@ -23,6 +23,7 @@ export default function AboutMe(){
                 <li>&#8227; Full Stack Web Developer</li>
                 <ul style={{paddingLeft: "20px"}}>
                     <li>&#9675; Nextjs</li>
+                    <li>&#9675; Docker</li>
                     <li>&#9675; Flask</li>
                     <li>&#9675; Django</li>
                     <li>&#9675; Laravel</li>
@@ -50,6 +51,7 @@ export default function AboutMe(){
                 </ul>
                 <li>&#8227; Robotics</li>
                 <ul style={{paddingLeft: "20px"}}>
+                    <li>&#9675; Docker</li>
                     <li>&#9675; ROS2</li>
                     <li>&#9675; Python</li>
                     <li>&#9675; C++</li>
