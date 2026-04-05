@@ -7,6 +7,23 @@ html {
 	font-size: 16px;
 }
 
+strong {
+  color: #CBCED1;
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+a {
+  color: #1D997E;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1D997E;
+  text-decoration: underline;
+}
+
 body {
 	font-family: verdana, sans-serif;
 	text-align: center;

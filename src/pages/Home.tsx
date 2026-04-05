@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "./homeSections/AboutMe";
+import FedeancoWebRegistry from "./homeSections/FedeancoWebRegistry";
 
 const Home = () => {
 	return (
@@ -14,6 +15,19 @@ const Home = () => {
         </section>
 
         <AboutMe />
+
+        <section>
+			<div className="plain">
+            <h1 id="Projects">Projects</h1>
+            </div>
+        </section>
+        <section>
+			<div className="plain">
+            <h1 id="Onging">&#8227; Ongoing</h1>
+            </div>
+        </section>
+
+        <FedeancoWebRegistry />
 		</>
 	);
 };
