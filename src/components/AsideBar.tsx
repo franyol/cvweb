@@ -15,6 +15,12 @@ function AsideBar({ onMore }: {onMore: () => void;}) {
                 <blockquote>
                     <a className="navitems" href="#Hobbies">&raquo; Hobbies</a>
                 </blockquote>
+                <blockquote>
+                    <a className="navitems" href="#Media">&raquo; Media</a>
+                </blockquote>
+                <blockquote>
+                    <a className="navitems" href="#ContactMe">&raquo; Contact Me</a>
+                </blockquote>
 			</blockquote>
 
 			<blockquote>
@@ -23,6 +29,9 @@ function AsideBar({ onMore }: {onMore: () => void;}) {
                     <a className="navitems" href="#Ongoing">&raquo; Ongoing</a>
                         <blockquote>
                             <a className="navitems" href="#Fedeanco">&raquo; Web Registry</a>
+                        </blockquote>
+                        <blockquote>
+                            <a className="navitems" href="#Lambda Engine">&raquo; Game Engine</a>
                         </blockquote>
                 </blockquote>
                 <blockquote>

@@ -1,4 +1,7 @@
 import profileImage from "../../assets/images/profile.jpg";
+import GithubLink from "../../components/GithubLink";
+import LinkedinLink from "../../components/LinkedinLink";
+import MailLink from "../../components/MailLink";
 
 export default function AboutMe(){
     return (
@@ -38,6 +41,26 @@ export default function AboutMe(){
                     <li>&#9675; Micro Controllers</li>
                     <li>&#9675; AI</li>
                 </ul>
+                <li>&#8227; Embedded Systems</li>
+                <ul style={{paddingLeft: "20px"}}>
+                    <li>&#9675; C</li>
+                    <li>&#9675; C++</li>
+                    <li>&#9675; ESP idf</li>
+                    <li>&#9675; FreeRTOS</li>
+                </ul>
+                <li>&#8227; Robotics</li>
+                <ul style={{paddingLeft: "20px"}}>
+                    <li>&#9675; ROS2</li>
+                    <li>&#9675; Python</li>
+                    <li>&#9675; C++</li>
+                </ul>
+                <li>&#8227; Circuit Design</li>
+                <ul style={{paddingLeft: "20px"}}>
+                    <li>&#9675; Kicad</li>
+                    <li>&#9675; ltspice</li>
+                    <li>&#9675; Altium</li>
+                    <li>&#9675; OrCAD</li>
+                </ul>
             </ul>
 
             <h2 id="Hobbies">Hobbies</h2>
@@ -47,7 +70,6 @@ export default function AboutMe(){
                 <li>&#8227; Linux Kernel</li>
                 <li>&#8227; Game Dev in C++</li>
                 <li>&#8227; Cyber Security</li>
-                <li>&#8227; Robotics</li>
             </ul>
             </div>
 
@@ -62,6 +84,24 @@ export default function AboutMe(){
                         borderRadius: "15px",
                     }}
                 />
+            </div>
+            </div>
+
+            <div style={{ display: "flex", flexWrap: "wrap"  }}>
+            <div style={{ flex: "1" }}>
+            <h2 id="Media">Media</h2>
+            <GithubLink href="https://github.com/franyol">
+                <h3>Github</h3>
+            </GithubLink>
+            <LinkedinLink href="https://www.linkedin.com/in/francisco-valbuena-ortega-90a56922b/">
+                <h3>Linkedin</h3>
+            </LinkedinLink>
+            </div>
+            <div style={{ flex: "1"}}>
+            <h2 id="ContactMe">Contact Me</h2>
+            <MailLink href="mailto:f.valbuenao64@gmail.com">
+                <h3>f.valbuenao64@gmail.com</h3>
+            </MailLink>
             </div>
             </div>
 

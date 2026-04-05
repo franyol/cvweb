@@ -13,6 +13,27 @@ strong {
   font-size: 1.05em;
 }
 
+.github-icon {
+  font-size: 28px; /* try 24px–32px depending on your design */
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #24292e; /* GitHub dark */
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.github-button:hover {
+  background-color: #2f363d;
+  transform: translateY(-1px);
+}
+
 a {
   color: #1D997E;
   text-decoration: none;
@@ -59,6 +80,10 @@ figcaption {
 
 header, section, footer, nav, figure, figcaption, hgroup {
 	display: block;
+}
+
+p {
+	padding-bottom: 15px;
 }
 
 .navitems,

@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "./homeSections/AboutMe";
 import FedeancoWebRegistry from "./homeSections/FedeancoWebRegistry";
+import LambdaEngine from "./homeSections/LambdaEngine";
 
 const Home = () => {
 	return (
@@ -28,6 +29,8 @@ const Home = () => {
         </section>
 
         <FedeancoWebRegistry />
+
+        <LambdaEngine />
 		</>
 	);
 };
