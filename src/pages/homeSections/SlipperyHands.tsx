@@ -12,7 +12,7 @@ export default function SlipperyHands(){
             <GithubLink href="https://github.com/franyol/Slippery-Hands">
                 <h3>View on Github</h3>
             </GithubLink>
-            <GameLink href="/Slippery-Hands">
+            <GameLink href="/Slippery-Hands/">
                 <h3>Try it Now!</h3>
             </GameLink>
             <p>( Move: w, a, s, d Jump: Spacebar )</p>
