@@ -193,13 +193,13 @@ export default function AboutMe() {
 
 					<div style={{ flex: "1" }}>
 						<h2 id="Media">Media</h2>
-						<GithubLink href="..."><h3>Github</h3></GithubLink>
-						<LinkedinLink href="..."><h3>Linkedin</h3></LinkedinLink>
+						<GithubLink href="https://github.com/franyol"><h3>Github</h3></GithubLink>
+						<LinkedinLink href="https://www.linkedin.com/in/francisco-valbuena-ortega-90a56922b/"><h3>Linkedin</h3></LinkedinLink>
 					</div>
 
 					<div style={{ flex: "1" }}>
 						<h2 id="ContactMe">Contact Me</h2>
-						<MailLink href="..."><h3>Email</h3></MailLink>
+						<MailLink href="mailto:f.valbuenao64@gmail.com"><h3>f.valbuenao64@gmail.com</h3></MailLink>
 					</div>
 
 				</div>
