@@ -1,138 +1,173 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
 	font-size: 16px;
 }
 
-strong {
-  color: #CBCED1;
-  font-weight: 700;
-  font-size: 1.05em;
-}
-
-.github-icon {
-  font-size: 28px; /* try 24px–32px depending on your design */
-}
-
-.github-button {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background-color: #24292e; /* GitHub dark */
-  color: #ffffff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.github-button:hover {
-  background-color: #2f363d;
-  transform: translateY(-1px);
-}
-
-a {
-  color: #1D997E;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #1D997E;
-  text-decoration: underline;
-}
+/* ---------------- BASE ---------------- */
 
 body {
 	font-family: verdana, sans-serif;
 	text-align: center;
-	background: #1f2d39;
+	background: #0f1720;
+	color: #d6dde3;
 
-	font-size: 1.25rem; /* bigger on mobile */
-	line-height: 1.7;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 
-h1 {
-	font-weight: bold;
-	font-size: 2.0rem;
-}
+/* ---------------- TEXT ---------------- */
 
-h2 {
-	font-weight: bold;
-	font-size: 1.6rem;
-}
-
-li {
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
-
-	font-weight: bold;
-	font-size: 1.1rem;
-}
-
-figcaption {
-	font-style: italic;
-	font-size: 1rem;
-}
-
-header, section, footer, nav, figure, figcaption, hgroup {
-	display: block;
+strong {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.05em;
 }
 
 p {
 	padding-bottom: 15px;
 }
 
-.navitems,
-.indexitems {
-	color: #a5abb0;
+/* ---------------- LINKS ---------------- */
+
+a {
+	color: #20c997;
 	text-decoration: none;
-	font-size: 1.15rem;
+	transition: opacity 0.2s ease;
 }
 
-.navbar {
-	text-align: left;
-	padding: 10px;
+a:hover {
+	opacity: 0.85;
+	text-decoration: underline;
 }
+
+/* ---------------- HEADINGS ---------------- */
+
+h1 {
+	font-weight: bold;
+	font-size: 2rem;
+	color: #e6edf3;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #e6edf3;
+
+	margin-top: 18px;
+	margin-bottom: 8px;
+}
+
+/* ---------------- ICONS ---------------- */
+
+.github-icon {
+	font-size: 28px;
+}
+
+li svg {
+	color: #20c997;
+	min-width: 16px;
+}
+
+/* ---------------- BUTTON ---------------- */
+
+.github-button {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 10px 16px;
+
+	background-color: #1b2a36;
+	color: #ffffff;
+
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.github-button:hover {
+	background-color: #223544;
+}
+
+/* ---------------- LISTS ---------------- */
+
+ul {
+	margin: 0;
+	padding-left: 18px;
+}
+
+ul ul {
+	margin: 4px 0;
+	padding-left: 18px;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	padding: 2px 0;
+	margin: 1px 0;
+
+	font-weight: 500;
+	font-size: 1.05rem;
+	color: #c9d4dc;
+}
+
+/* ---------------- HEADER / NAV ---------------- */
 
 header {
-	background: #202E3B;
+	background: #16222c;
 	padding: 20px;
-	color: #a5abb0;
+	color: #c9d4dc;
 }
 
 nav {
 	position: sticky;
 	top: 0;
-	background: #202E3B;
-	border-bottom: 1px solid #a5abb0;
+
+	background: #16222c;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+
 	padding: 5px 15px;
-	color: #d2d5d7;
+	color: #c9d4dc;
 	height: 40px;
 }
+
+/* ---------------- NAV ITEMS ---------------- */
+
+.navitems,
+.indexitems {
+	color: #8fa0ad;
+	text-decoration: none;
+	font-size: 1.15rem;
+}
+
+/* ---------------- MAIN ---------------- */
 
 main {
 	flex: 1;
 }
 
+/* ---------------- SCROLL ---------------- */
+
 .scroll-container {
-  overflow-x: auto;
-  overflow-y: hidden;
+	overflow-x: auto;
+	overflow-y: hidden;
 
-  /* Hide scrollbar - Firefox */
-  scrollbar-width: none;
-
-  /* Hide scrollbar - IE/Edge */
-  -ms-overflow-style: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
-/* Hide scrollbar - Chrome, Safari */
 .scroll-container::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
+
+/* ---------------- LAYOUT ---------------- */
 
 section {
 	display: flex;
@@ -140,49 +175,64 @@ section {
 	margin: 20px;
 }
 
-aside {
-	flex: 0 0 220px;
+/* ---------------- SIDEBAR ---------------- */
 
+aside {
 	position: fixed;
 	top: 51px;
 	left: 0;
 
+	width: 350px;
 	height: calc(94vh - 51px);
-	width: 70%;
+
 	overflow-y: auto;
 
 	padding: 20px;
-	background: #243A45;
-	border-right: 1px solid #a5abb0;
-	border-top: 1px solid #a5abb0;
 
-	align-self: flex-start;
+	background: #1b2a36;
+	border: 1px solid rgba(255,255,255,0.06);
+
 	border-radius: 12px;
 	text-align: left;
+
+	/* smooth scrolling feel */
+	scroll-behavior: smooth;
 }
 
-blockquote {
-	padding-left: 20px;
+/* ================= SCROLLBAR (WebKit) ================= */
+aside::-webkit-scrollbar {
+	width: 8px;
 }
 
-footer {
-	clear: both;
-	text-align: center;
-	padding: 20px;
-	border-top: 1px solid #a5abb0;
-	color: #798188;
-
-	font-size: 1rem;
+aside::-webkit-scrollbar-track {
+	background: transparent;
 }
+
+aside::-webkit-scrollbar-thumb {
+	background: rgba(144, 164, 174, 0.25);
+	border-radius: 10px;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+	background: rgba(144, 164, 174, 0.45);
+}
+
+/* ================= SCROLLBAR (Firefox) ================= */
+aside {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(144, 164, 174, 0.25) transparent;
+}
+
+/* ---------------- CONTENT BOXES ---------------- */
 
 .plain {
 	flex: 1 1 400px;
 	padding: 20px;
 	margin-bottom: 15px;
-  max-width: 100vw;
+	max-width: 100vw;
 
-	color: #a5abb0;
-	line-height: 1.8;
+	color: #d6dde3;
+	line-height: 1.7;
 
 	border-radius: 12px;
 	text-align: left;
@@ -190,24 +240,58 @@ footer {
 
 article {
 	flex: 1 1 400px;
-	background: #243A45;
-	border: 1px solid #798188;
+
+	background: #1b2a36;
+	border: 1px solid rgba(255,255,255,0.06);
+
 	padding: 20px;
 	margin-bottom: 15px;
-  max-width: 100vw;
+	max-width: 100vw;
 
-	color: #a5abb0;
-	line-height: 1.8;
+	color: #d6dde3;
+	line-height: 1.7;
 
 	border-radius: 12px;
 	text-align: left;
 }
+
+/* ---------------- ARTICLE FOOTER ---------------- */
 
 article footer {
 	text-align: right;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+/* ---------------- BLOCKQUOTE ---------------- */
+
+blockquote {
+	padding-left: 20px;
+	color: #8fa0ad;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+
+	border-top: 1px solid rgba(255,255,255,0.08);
+	color: #8fa0ad;
+
+	font-size: 1rem;
+}
+
+/* ---------------- FIGCAPTION ---------------- */
+
+figcaption {
+	font-style: italic;
+	font-size: 1rem;
+	color: #8fa0ad;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
 
 @media (min-width: 768px) {
 	body {
@@ -232,16 +316,10 @@ article footer {
 		font-size: 1rem;
 	}
 
-	article {
-		max-width: 70vw;
-		font-size: 1.05rem;
-		line-height: 1.7;
-	}
-
+	article,
 	.plain {
 		max-width: 70vw;
-		font-size: 1.05rem;
-		line-height: 1.7;
+		line-height: 1.65;
 	}
 
 	footer {

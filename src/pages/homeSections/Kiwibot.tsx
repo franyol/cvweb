@@ -1,155 +1,221 @@
-import fedeancoImage from "../../assets/images/kiwibot.jpg"
+import fedeancoImage from "../../assets/images/kiwibot.jpg";
 
-export default function Kiwibot(){
-    return (
-    <>
-    <section>
-        <article id="FCT">
-            <h1>Fleet Control Toolkit</h1>
+import {
+	FaRobot,
+	FaCode,
+	FaCloud,
+	FaLaptopCode,
+	FaNetworkWired,
+	FaTools,
+	FaServer,
+	FaCogs
+} from "react-icons/fa";
 
-            <div style={{display: "flex", flexWrap: "wrap-reverse", gap: "5px"}}>
+export default function Kiwibot() {
+	return (
+		<section>
+			<article id="Kiwibot">
 
-            <div style={{flex: 7, minWidth: "300px", paddingLeft: "20px"}}>
-            <h2>Stack</h2>
-            <ul style={{ display: "flex", flexDirection: "column" }}>
+				<h1>Fleet Control Toolkit</h1>
 
-                <li>&#8227; Robotics Operations</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; Autonomous Systems Debugging</li>
-                    <li>&#9675; Fleet Monitoring & Diagnostics</li>
-                    <li>&#9675; Incident Response</li>
-                    <li>&#9675; Telemetry Analysis (Logs, Heartbeats)</li>
-                </ul>
+				{/* TOP */}
+				<div style={{
+					display: "flex",
+					flexWrap: "wrap-reverse"
+				}}>
 
-                <li>&#8227; Backend & Automation</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; Python</li>
-                    <li>&#9675; CLI Tooling (Autodebugger)</li>
-                    <li>&#9675; API Design (REST)</li>
-                    <li>&#9675; Automation Pipelines</li>
-                    <li>&#9675; OOP & Design Patterns</li>
-                </ul>
+					{/* LEFT */}
+					<div style={{
+						flex: 7,
+						minWidth: "300px",
+						paddingLeft: "20px"
+					}}>
 
-                <li>&#8227; Cloud & Infrastructure</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; Google Cloud (Cloud Run)</li>
-                    <li>&#9675; Containerized Services</li>
-                    <li>&#9675; Remote Device Management</li>
-                    <li>&#9675; Balena Cloud</li>
-                </ul>
+						<h2>Stack</h2>
 
-                <li>&#8227; Web Development</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; Next.js</li>
-                    <li>&#9675; TypeScript</li>
-                    <li>&#9675; Plotly Dash</li>
-                    <li>&#9675; tRPC</li>
-                </ul>
+						<ul style={{
+							display: "flex",
+							flexDirection: "column",
+							gap: "16px"
+						}}>
 
-                <li>&#8227; Systems Integration</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; SSH-based Device Control</li>
-                    <li>&#9675; Inter-service Communication</li>
-                    <li>&#9675; Hardware-Software Interaction</li>
-                </ul>
+							{/* Robotics */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaRobot /> Robotics Operations
+							</li>
 
-                <li>&#8227; Software Engineering</li>
-                <ul style={{ paddingLeft: "20px" }}>
-                    <li>&#9675; Technical Debt Reduction</li>
-                    <li>&#9675; Internal Tooling Development</li>
-                    <li>&#9675; Monorepo Migration</li>
-                    <li>&#9675; Code Reusability (Python Packages)</li>
-                </ul>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>Autonomous Debugging</li>
+								<li>Fleet Monitoring</li>
+								<li>Incident Response</li>
+								<li>Telemetry Analysis</li>
+							</ul>
 
-            </ul>
-            </div>
+							{/* Backend */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaCode /> Backend & Automation
+							</li>
 
-            <div style={{flex: 3, minWidth: "200px", maxWidth: "500px"}}>
-                <img
-                    src={fedeancoImage}
-                    alt="Kiwibot"
-                    style={{
-                        background: "#e9f0f3",
-                        maxWidth: "100%",
-                        height: "auto",
-                        borderRadius: "15px",
-                    }}
-                />
-            </div>
-            </div>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>Python</li>
+								<li>CLI Tooling</li>
+								<li>REST APIs</li>
+								<li>Automation Pipelines</li>
+							</ul>
 
-            <h2 style={{ paddingTop: "20px" }}>Context</h2>
+							{/* Cloud */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaCloud /> Cloud Infrastructure
+							</li>
 
-            <p style={{ paddingLeft: "20px" }}>
-              During my time at <strong>Kiwibot</strong> (later <strong>Robot.com</strong>), I worked as a <strong>Service Desk Robotics Engineer</strong>, supporting the operation of a large-scale <strong>autonomous delivery fleet</strong>. My role focused on diagnosing real-world failures across <strong>robotics systems</strong>, including onboard computers, sensors, networking, and autonomy software.
-            </p>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>GCP Cloud Run</li>
+								<li>Containers</li>
+								<li>Balena Cloud</li>
+								<li>Device Management</li>
+							</ul>
 
-            <p style={{ paddingLeft: "20px" }}>
-              While most of the work involved <strong>incident response</strong> and <strong>ticket resolution</strong>, the repetitive nature of many issues revealed opportunities for <strong>automation</strong> and <strong>tooling improvements</strong>. This led me to develop internal systems that reduced <strong>manual debugging effort</strong>, improved <strong>fleet observability</strong>, and standardized how engineers interacted with production devices.
-            </p>
+							{/* Web */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaLaptopCode /> Web Development
+							</li>
 
-            <p style={{ paddingLeft: "20px" }}>
-              Over time, my contributions expanded beyond support into <strong>internal platform development</strong>, including <strong>APIs</strong>, <strong>web tools</strong>, and <strong>automation frameworks</strong> used across Service Desk, Robotics Operations, and Maintenance teams.
-            </p>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>Next.js</li>
+								<li>TypeScript</li>
+								<li>tRPC</li>
+								<li>Dash</li>
+							</ul>
 
-            <h2 style={{ paddingTop: "20px" }}>The Autodebugger</h2>
+							{/* Systems */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaNetworkWired /> Systems Integration
+							</li>
 
-            <p style={{ paddingLeft: "20px" }}>
-              The <strong>Autodebugger</strong> was a <strong>Python-based CLI tool</strong> designed to automate repetitive debugging tasks across the robotic fleet. It originated from a simple observation: a large portion of Service Desk work consisted of <strong>predictable, repeatable fixes</strong> that could be systematically automated.
-            </p>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>SSH Control</li>
+								<li>Service Communication</li>
+								<li>Hardware Integration</li>
+							</ul>
 
-            <p style={{ paddingLeft: "20px" }}>
-              The system was built as a modular <strong>diagnostic pipeline</strong> composed of three stages: <strong>triggering</strong> potential incidents, <strong>verifying</strong> them through targeted checks, and <strong>deploying solutions</strong> automatically. It interfaced directly with robots via <strong>SSH</strong>, leveraging telemetry such as <strong>heartbeats, logs, and system metrics</strong> to make decisions.
-            </p>
+							{/* Engineering */}
+							<li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+								<FaCogs /> Software Engineering
+							</li>
 
-            <p style={{ paddingLeft: "20px" }}>
-              Architecturally, the tool followed a <strong>decorator-based design</strong> inspired by <strong>Flask</strong>, allowing new incident types to be registered dynamically. Each issue was modeled as a combination of <strong>Trigger</strong>, <strong>Diagnose</strong>, and <strong>Solution</strong> components, enabling a highly <strong>extensible</strong> and <strong>maintainable</strong> system.
-            </p>
+							<ul style={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: "6px 10px",
+								paddingLeft: "20px",
+								listStyle: "none"
+							}}>
+								<li>Internal Tools</li>
+								<li>Monorepos</li>
+								<li>Python Packages</li>
+								<li>Refactoring</li>
+							</ul>
 
-            <p style={{ paddingLeft: "20px" }}>
-              At its peak, the Autodebugger was capable of resolving over <strong>50% of incoming tickets</strong> automatically, covering systems such as <strong>AGX</strong>, <strong>cameras</strong>, <strong>networking</strong>, <strong>GPS</strong>, and <strong>sensors</strong>. This significantly reduced manual workload and demonstrated the potential of <strong>automation in robotics operations</strong>.
-            </p>
+						</ul>
 
-            <p style={{ paddingLeft: "20px" }}>
-              Despite its technical success, adoption was limited due to <strong>usability barriers</strong> and <strong>trust concerns</strong>, highlighting an important lesson: effective automation requires not only solving problems, but doing so in a way that users are comfortable adopting.
-            </p>
+					</div>
 
-            <p style={{ paddingLeft: "20px" }}>
-              Although eventually superseded by more integrated systems within the robotics stack, the Autodebugger laid the foundation for thinking about <strong>self-healing systems</strong> and <strong>automated incident response</strong> in production environments.
-            </p>
+					{/* IMAGE */}
+					<div style={{
+						flex: 3,
+						minWidth: "200px",
+						maxWidth: "500px"
+					}}>
+						<img
+							src={fedeancoImage}
+							alt="Kiwibot"
+							style={{
+								width: "100%",
+								height: "auto",
+								borderRadius: "15px",
+								background: "#e9f0f3"
+							}}
+						/>
+					</div>
 
-               <h2 style={{ paddingTop: "20px" }}>Fleet Automation Services</h2>
+				</div>
 
-            <p style={{ paddingLeft: "20px" }}>
-              As part of improving fleet-level operations, I developed a <strong>cloud-based automation service</strong> using <strong>GCP Cloud Run</strong>, designed to remotely update <strong>device and fleet configurations</strong> on demand.
-            </p>
+				{/* TEXT */}
+				<h2 style={{ paddingTop: "20px" }}>Context</h2>
 
-            <p style={{ paddingLeft: "20px" }}>
-              The service exposed a simple interface that could be triggered programmatically or through schedulers, enabling automated workflows such as <strong>configuration updates</strong> and <strong>fleet-wide adjustments</strong> without manual intervention.
-            </p>
+				<p style={{ paddingLeft: "20px" }}>
+					Worked at <strong>Kiwibot</strong> as a Service Desk Robotics Engineer supporting an autonomous fleet.
+				</p>
 
-            <p style={{ paddingLeft: "20px" }}>
-              This tool was integrated into operational processes and actively used to coordinate changes across deployed robots, improving <strong>consistency</strong> and reducing <strong>human error</strong>.
-            </p>
+				<p style={{ paddingLeft: "20px" }}>
+					Focused on debugging robotics systems and building automation tools to reduce operational load.
+				</p>
 
-            <h2 style={{ paddingTop: "20px" }}>Device Manager</h2>
+				<p style={{ paddingLeft: "20px" }}>
+					Evolved into internal platform development including APIs and automation systems.
+				</p>
 
-            <p style={{ paddingLeft: "20px" }}>
-              Contributed to the <strong>REMI-Pro Device Manager</strong> by implementing features for <strong>fleet-wide updates</strong> and <strong>release tracking</strong>. This included support for the new <strong>semantic versioning system</strong> and a unified interface to monitor update progress across all devices in real time.
-            </p>
+				<h2 style={{ paddingTop: "20px" }}>Autodebugger</h2>
 
-            <footer>
-                Updated: 04/05/2026
-            </footer>
-        </article>
-    </section>
-    </>
-    )
-}
+				<p style={{ paddingLeft: "20px" }}>
+					A Python CLI tool that automated repetitive debugging workflows across the fleet.
+				</p>
 
-const OAELab = () => {
-    return <a href="https://www.eecis.udel.edu/~badiey/">Laboratory of Ocean Acoustics & Engineering</a>
-}
-const LambdaEngine = () => {
-    return <a href="#LambdaEngine">Lambda Engine</a>
+				<p style={{ paddingLeft: "20px" }}>
+					Designed as a Trigger → Diagnose → Solution pipeline using SSH and telemetry.
+				</p>
+
+				<p style={{ paddingLeft: "20px" }}>
+					Reduced over 50% of incoming tickets through automation.
+				</p>
+
+				<h2 style={{ paddingTop: "20px" }}>Fleet Automation</h2>
+
+				<p style={{ paddingLeft: "20px" }}>
+					Built GCP Cloud Run services for fleet configuration and automation workflows.
+				</p>
+
+				<h2 style={{ paddingTop: "20px" }}>Device Manager</h2>
+
+				<p style={{ paddingLeft: "20px" }}>
+					Contributed to REMI-Pro Device Manager with versioning and fleet tracking systems.
+				</p>
+
+				<footer>
+					Updated: 04/05/2026
+				</footer>
+
+			</article>
+		</section>
+	);
 }
