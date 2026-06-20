@@ -20,4 +20,4 @@ jobs:
 
 
       - name: Run sync script
-        run: bash scripts/sync-static-branch.sh
+        run: bash "${{ github.workspace }}/scripts/fetch-slippery-hands.sh
