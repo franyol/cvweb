@@ -1,0 +1,23 @@
+# .github/workflows/sync.yml
+name: Sync Slippery Hands Static Build
+
+on:
+  repository_dispatch:
+    types: [sync-static]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+
+      - name: Run sync script
+        run: bash scripts/sync-static-branch.sh
