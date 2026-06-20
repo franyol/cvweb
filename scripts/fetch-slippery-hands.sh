@@ -13,7 +13,7 @@ git clone --depth 1 --single-branch --branch "$BRANCH" "$REPO" "$TMP_DIR"
 echo "📁 Syncing into destination..."
 mkdir -p "$DEST"
 
-rsync -av --delete \
+rsync -a --delete \
   --exclude=".git" \
   --exclude="index.html" \
   "$TMP_DIR/" "$DEST/"
@@ -24,15 +24,6 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
 echo "📦 Adding changes..."
 git add -A
-
-echo "=== GIT STATUS ==="
-git status
-
-echo "=== GIT DIFF ==="
-git diff
-
-echo "=== STAGED DIFF ==="
-git diff --cached
 
 echo "📝 Creating commit..."
 git commit -m "Sync static branch into public/Slippery-Hands - $(date '+%Y-%m-%d %H:%M:%S')" || {
