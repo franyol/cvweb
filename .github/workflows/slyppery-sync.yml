@@ -3,7 +3,7 @@ name: Sync Slippery Hands Static Build
 
 on:
   repository_dispatch:
-    types: [sync-static]
+    types: [fetch-slippery-hands-static]
 
 permissions:
   contents: write
