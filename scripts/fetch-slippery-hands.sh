@@ -10,6 +10,15 @@ TMP_DIR="$(mktemp -d)"
 echo "📥 Cloning static branch..."
 git clone --depth 1 --single-branch --branch "$BRANCH" "$REPO" "$TMP_DIR"
 
+echo "=== CLONED BRANCH ==="
+git -C "$TMP_DIR" branch --show-current
+
+echo "=== CLONED COMMIT ==="
+git -C "$TMP_DIR" rev-parse HEAD
+
+echo "=== ORIGIN STATIC ==="
+git ls-remote "$REPO" "$BRANCH"
+
 echo "📁 Syncing into destination..."
 mkdir -p "$DEST"
 
