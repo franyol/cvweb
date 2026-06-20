@@ -1,6 +1,10 @@
 name: Deploy to S3
 
 on:
+  workflow_run:
+    workflows: ["Sync Slippery Hands Static Build"]
+    types:
+      - completed
   push:
     branches: [main]
 
