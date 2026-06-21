@@ -34,15 +34,6 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 echo "📦 Adding changes..."
 git add -A
 
-echo "=== GIT STATUS ==="
-git status
-
-echo "=== GIT DIFF ==="
-git diff
-
-echo "=== STAGED DIFF ==="
-git diff --cached
-
 echo "📝 Creating commit..."
 git commit -m "Sync static branch into public/Slippery-Hands - $(date '+%Y-%m-%d %H:%M:%S')" || {
   echo "ℹ️ No changes to commit"
