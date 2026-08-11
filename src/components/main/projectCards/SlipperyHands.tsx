@@ -48,7 +48,7 @@ export default function SlipperyHands() {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Move: W A S D · Jump: Space
+              Move: W A S D · Jump: K · Shoot: J
             </p>
 
             <p>
