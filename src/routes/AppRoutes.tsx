@@ -9,7 +9,7 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Slippery-Hands/" element={<iframe src="/Slippery-Hands/index.html" />} />
+      <Route path="/Slippery-Hands" element={<iframe src="/Slippery-Hands/index.html" />} />
     </Routes>
   );
 }
