@@ -15,7 +15,6 @@ jobs:
 deploy:
 runs-on: ubuntu-latest
 
-```
 steps:
   - name: Checkout repo
     uses: actions/checkout@v4
@@ -42,4 +41,3 @@ steps:
   - name: Sync to S3
     run: |
       aws s3 sync dist/ s3://cvweb-983971845948-us-east-2-an --delete
-```
