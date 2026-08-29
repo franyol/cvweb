@@ -8,7 +8,7 @@ import {
 
 export default function SlipperyHands() {
   return (
-    <section id="SlipperyHands">
+    <section id="slippery-hands">
       <ProjectCard
         title="Slippery Hands"
         description="A browser game built from scratch in vanilla JavaScript as an experiment in low-level game development and software architecture."
@@ -48,7 +48,7 @@ export default function SlipperyHands() {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Move: W A S D · Jump: K · Shoot: J
+              Move: W A S D · Jump: K · Shoot: H
             </p>
 
             <p>

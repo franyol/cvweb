@@ -10,7 +10,7 @@ import {
 
 export default function LambdaEngine() {
   return (
-    <section id="LambdaEngine">
+    <section id="lambda-engine">
       <ProjectCard
         title="Lambda Engine"
         description="A custom C++ game engine developed as a long-term exploration of engine architecture, low-level systems, and software design."

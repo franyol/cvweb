@@ -47,9 +47,8 @@ export function Header() {
       </a>
 
       <nav className="flex items-center gap-6">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/Slippery-Hands">Slippery Hands</a>
       </nav>
     </header>
   );

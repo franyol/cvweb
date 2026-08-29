@@ -1,39 +1,96 @@
-import React from "react";
-
 import heroImage from "@/assets/images/Hero.webp";
 import heroImageMobile from "@/assets/images/Hero_Mobile.webp";
-import { AboutMe } from "../components/main/AboutMe";
-import { Projects } from "../components/main/Projects";
-import Kiwibot from "../components/main/projectCards/Kiwibot";
-import Mars from "../components/main/projectCards/MARS";
-import SlipperyHands from "../components/main/projectCards/SlipperyHands";
-import LambdaEngine from "../components/main/projectCards/LambdaEngine";
-import { Contact } from "../components/main/Contact";
-
-const sectionStyle: React.CSSProperties = {
-  padding: "10px 0",
-};
-
-const headerStyle: React.CSSProperties = {
-  padding: "20px",
-  borderRadius: "12px",
-};
-
-const CategoryTitle = ({
-  id,
-  children,
-}: {
-  id: string;
-  children: React.ReactNode;
-}) => (
-  <section id={id} style={sectionStyle}>
-    <div className="plain" style={headerStyle}>
-      <h2 style={{ margin: 0 }}>{children}</h2>
-    </div>
-  </section>
-);
+import { AboutMe } from "@/components/main/AboutMe";
+import { Projects } from "@/components/main/Projects";
+import Kiwibot from "@/components/main/projectCards/Kiwibot";
+import Mars from "@/components/main/projectCards/MARS";
+import SlipperyHands from "@/components/main/projectCards/SlipperyHands";
+import LambdaEngine from "@/components/main/projectCards/LambdaEngine";
+import { Contact } from "@/components/main/Contact";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
+import { Navigation, SidebarNavigation } from "@/components/sidebar/SidebarNavigation";
 
 const Home = () => {
+  return (
+    <SidebarProvider>
+      <SideBar navigation={portfolioNavigation} />
+
+      <main>
+        <SidebarTrigger className="fixed top-20 z-50 w-12 h-12" />
+        <Content />
+      </main>
+    </SidebarProvider>
+  );
+};
+
+export const portfolioNavigation: Navigation = {
+  label: "Navigation",
+  items: [
+    {
+      label: "About",
+      href: "#about",
+    },
+    {
+      label: "Projects",
+      href: "#projects",
+      children: [
+        {
+          label: "Kiwibot",
+          href: "#kiwibot",
+        },
+        {
+          label: "MARS",
+          href: "#mars",
+        },
+        {
+          label: "Slippery Hands",
+          href: "#slippery-hands",
+        },
+        {
+          label: "Lambda Engine",
+          href: "#lambda-engine",
+        },
+      ],
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+    },
+  ],
+};
+
+type SideBarProps = {
+  navigation: Navigation;
+};
+
+const SideBar = ({ navigation }: SideBarProps) => {
+  return (
+    <Sidebar>
+      <SidebarHeader className="px-6 pt-10 pb-5">
+        <span className="text-lg font-semibold">
+          Index
+        </span>
+      </SidebarHeader>
+
+      <SidebarContent>
+        <SidebarNavigation navigation={navigation} />
+      </SidebarContent>
+
+      <SidebarFooter className="p-4">
+        {/* Footer content */}
+      </SidebarFooter>
+    </Sidebar>
+  );
+};
+
+const Content = () => {
   return (
     <>
       {/* ===================== HERO ===================== */}
@@ -63,6 +120,6 @@ const Home = () => {
       <Contact />
     </>
   );
-};
+}
 
 export default Home;
