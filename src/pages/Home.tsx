@@ -16,6 +16,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Navigation, SidebarNavigation } from "@/components/sidebar/SidebarNavigation";
+import { Milestones } from "@/components/main/Milestones";
 
 const Home = () => {
   return (
@@ -31,7 +32,6 @@ const Home = () => {
 };
 
 export const portfolioNavigation: Navigation = {
-  label: "Navigation",
   items: [
     {
       label: "About",
@@ -60,6 +60,10 @@ export const portfolioNavigation: Navigation = {
       ],
     },
     {
+      label: "Milestones",
+      href: "#milestones",
+    },
+    {
       label: "Contact",
       href: "#contact",
     },
@@ -75,11 +79,11 @@ const SideBar = ({ navigation }: SideBarProps) => {
     <Sidebar>
       <SidebarHeader className="px-6 pt-10 pb-5">
         <span className="text-lg font-semibold">
-          Index
+          Navigation
         </span>
       </SidebarHeader>
 
-      <SidebarContent>
+      <SidebarContent className="pl-3">
         <SidebarNavigation navigation={navigation} />
       </SidebarContent>
 
@@ -117,6 +121,7 @@ const Content = () => {
         <SlipperyHands />
         <LambdaEngine />
       </section>
+      <Milestones />
       <Contact />
     </>
   );
