@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import fedeancoImage from "@/assets/images/BulletHeaven.png";
 import { ProjectCard } from "@/components/ProjectCard";
 
@@ -9,13 +11,15 @@ import {
 } from "react-icons/fa";
 
 export default function LambdaEngine() {
+  const { t } = useTranslation("home");
+
   return (
     <section id="lambda-engine">
       <ProjectCard
-        title="Lambda Engine"
-        description="A custom C++ game engine developed as a long-term exploration of engine architecture, low-level systems, and software design."
+        title={t("projects.lambdaEngine.title")}
+        description={t("projects.lambdaEngine.description")}
         image={fedeancoImage}
-        imageAlt="Lambda Engine"
+        imageAlt={t("projects.lambdaEngine.imageAlt")}
         imagePosition="left"
         content={
           <div className="space-y-6">
@@ -32,7 +36,7 @@ export default function LambdaEngine() {
 
               <span className="flex items-center gap-2">
                 <FaGamepad />
-                Game Development
+                {t("projects.lambdaEngine.technologies.gameDevelopment")}
               </span>
             </div>
 
@@ -47,27 +51,11 @@ export default function LambdaEngine() {
               </a>
             </div>
 
-            <p>
-              I became interested in <strong>game development</strong>, but
-              found myself particularly drawn to{" "}
-              <strong>engine architecture</strong> and{" "}
-              <strong>low-level systems</strong>.
-            </p>
+            <p>{t("projects.lambdaEngine.paragraphs.interest")}</p>
 
-            <p>
-              Instead of using an existing engine such as Unity or Unreal, I
-              decided to build my own engine in C++. The project became a
-              long-term solo effort focused on understanding system design,
-              abstractions, and design patterns.
-            </p>
+            <p>{t("projects.lambdaEngine.paragraphs.engine")}</p>
 
-            <p>
-              The engine uses SDL2 as its foundation, including{" "}
-              <strong>SDL2_image</strong>, <strong>SDL2_mixer</strong>, and{" "}
-              <strong>SDL2_ttf</strong>. The work has given me practical
-              experience with memory management, performance considerations,
-              rendering systems, and the organization of larger C++ projects.
-            </p>
+            <p>{t("projects.lambdaEngine.paragraphs.sdl")}</p>
 
             <p className="flex items-center justify-center gap-2">
               <FaBook />

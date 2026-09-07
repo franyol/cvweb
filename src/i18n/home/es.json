@@ -1,0 +1,126 @@
+{
+  "about": {
+    "title": "Acerca de mí",
+    "paragraphs": {
+      "intro": "Soy Ingeniero Electrónico e Ingeniero de Software y actualmente trabajo en Mazda Colombia como Desarrollador Backend, con experiencia en robótica, sistemas embebidos, procesamiento de señales y desarrollo de software. Me interesan particularmente los sistemas físicos inteligentes y cómo la percepción, la computación y el control pueden combinarse para permitir que los robots operen eficazmente en el mundo real.",
+      "experience": "Mi experiencia en ingeniería incluye el trabajo con robots autónomos, el desarrollo de herramientas para monitoreo y depuración de flotas, el diseño de sistemas embebidos para sensores acústicos y la construcción de sistemas de software en diferentes niveles de abstracción. Estos proyectos me han proporcionado experiencia práctica tanto con sistemas físicos como con la infraestructura de software y computación necesaria para operarlos.",
+      "interests": "Estoy especialmente interesado en la robótica, la visión por computador y el aprendizaje automático. Quiero explorar cómo los robots pueden percibir y modelar entornos dinámicos, anticipar las acciones humanas y utilizar estas predicciones para tomar decisiones seguras y efectivas al trabajar junto a las personas.",
+      "phd": "Estoy interesado en realizar un PhD donde pueda explorar la intersección entre la robótica, el software y los sistemas de hardware. Mis intereses abarcan las máquinas inteligentes, los sistemas embebidos, la visión por computador, los circuitos y la electrónica, y la ciberseguridad, con especial curiosidad por comprender cómo se pueden diseñar sistemas complejos para interactuar de manera confiable con el mundo físico."
+    },
+    "researchInterests": {
+      "title": "Intereses de Investigación",
+      "items": "Robótica · Visión por Computador · Aprendizaje Automático · Ciberseguridad · Sistemas Embebidos · Procesamiento de Señales · Modelos Generativos · Aprendizaje por Refuerzo"
+    },
+    "technicalBackground": {
+      "title": "Experiencia Técnica",
+      "items": "Python · C++ · C · TypeScript · ROS2 · C#/.NET · React · Next.js · ESP32 · FreeRTOS · AWS · Docker · Linux · Git · APIs REST · Procesamiento de Señales"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Estoy interesado en oportunidades de investigación en robótica, inteligencia artificial, ciberseguridad, computación embebida y áreas relacionadas. Para preguntas, colaboraciones o consultas relacionadas con un doctorado, no dudes en ponerte en contacto conmigo."
+  },
+  "milestones": {
+    "title": "Línea de tiempo",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "items": {
+      "mazda": {
+        "title": "Desarrollador Backend en Mazda",
+        "description": "Me incorporé a Mazda como Desarrollador Backend, trabajando en sistemas backend y tecnologías web."
+      },
+      "research": {
+        "title": "Asistente de Investigación de Posgrado",
+        "description": "Me incorporé al Laboratorio de Acústica Oceánica de la Universidad de Delaware como Asistente de Investigación de Posgrado, trabajando bajo la dirección del Dr. Mohsen Badiey."
+      },
+      "degree": {
+        "title": "Ingeniería Electrónica — B.Sc.",
+        "description": "Obtuve el título de Bachelor of Science en Ingeniería Electrónica de la Pontificia Universidad Javeriana."
+      },
+      "robotics": {
+        "title": "Ingeniero de Robótica — Service Desk",
+        "description": "Me incorporé a robot.com como Ingeniero de Robótica en el equipo de Service Desk."
+      },
+      "internship": {
+        "title": "Practicante de Ingeniería de Integración y Control",
+        "description": "Me incorporé a robot.com como Practicante de Ingeniería de Integración y Control, trabajando en control e integración de sistemas robóticos."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "paragraphs": {
+      "intro": "Mis proyectos reflejan una combinación de ingeniería de software, robótica, sistemas embebidos, electrónica y experimentación. Disfruto construir sistemas desde cero y explorar cómo el software y el hardware pueden trabajar juntos para resolver problemas prácticos.",
+      "experience": "Desde robots autónomos y sistemas de sensores embebidos hasta motores de videojuegos y aplicaciones full-stack, estos proyectos me han permitido trabajar en diferentes niveles de un sistema mientras desarrollo un fuerte interés por la robótica, los sistemas inteligentes y los enfoques computacionales aplicados a problemas del mundo físico."
+    },
+    "kiwibot": {
+      "title": "Fleet Control Toolkit",
+      "description": "Operaciones de robótica, automatización e infraestructura de software para una flota autónoma de robots de reparto.",
+      "imageAlt": "Robot autónomo de reparto de Kiwibot",
+      "paragraphs": {
+        "intro": "En Kiwibot, trabajé como Ingeniero de Robótica en el equipo de Service Desk, brindando soporte a una flota de robots autónomos. Mi trabajo involucraba diagnosticar fallas tanto en los robots como en los sistemas de software que los rodeaban.",
+        "automation": "Desarrollé herramientas internas para automatizar tareas repetitivas de depuración y gestión de la flota, combinando telemetría, acceso remoto a dispositivos y diagnósticos de software en flujos de trabajo reproducibles.",
+        "debugging": "Una de estas herramientas fue un pipeline de depuración automatizada desarrollado en Python. Seguía un enfoque de Trigger → Diagnose → Solution, utilizando SSH y la telemetría de los robots para identificar y resolver problemas recurrentes. El sistema redujo en más de un 50% los tickets de servicio entrantes mediante automatización.",
+        "infrastructure": "También trabajé en la infraestructura de la flota basada en la nube, incluyendo servicios desplegados mediante GCP Cloud Run, flujos de gestión de dispositivos y APIs internas. Esto me permitió adquirir experiencia práctica con la infraestructura de software necesaria para operar sistemas autónomos a escala."
+      },
+      "technologies": {
+        "title": "Tecnologías"
+      }
+    },
+    "lambdaEngine": {
+      "title": "Lambda Engine",
+      "description": "Un motor de videojuegos personalizado desarrollado en C++ como una exploración a largo plazo de la arquitectura de motores, sistemas de bajo nivel y diseño de software.",
+      "imageAlt": "Lambda Engine",
+      "technologies": {
+        "gameDevelopment": "Desarrollo de videojuegos"
+      },
+      "paragraphs": {
+        "interest": "Me interesé por el desarrollo de videojuegos, pero descubrí que me atraían especialmente la arquitectura de motores y los sistemas de bajo nivel.",
+        "engine": "En lugar de utilizar un motor existente como Unity o Unreal, decidí construir mi propio motor en C++. El proyecto se convirtió en un esfuerzo individual a largo plazo enfocado en comprender el diseño de sistemas, las abstracciones y los patrones de diseño.",
+        "sdl": "El motor utiliza SDL2 como base, incluyendo SDL2_image, SDL2_mixer y SDL2_ttf. Este trabajo me ha proporcionado experiencia práctica con gestión de memoria, consideraciones de rendimiento, sistemas de renderizado y la organización de proyectos C++ de mayor escala."
+      }
+    },
+    "mars": {
+      "title": "Sistema de Grabación Acústica Marina",
+      "description": "Una plataforma embebida para la adquisición de datos acústicos submarinos, que combina electrónica personalizada, firmware en tiempo real y procesamiento de señales.",
+      "imageAlt": "Sistema de Grabación Acústica Marina",
+      "paragraphs": {
+        "intro": "MARS fue desarrollado en el contexto de la investigación en acústica submarina, combinando sistemas embebidos, electrónica y procesamiento digital de señales para construir una plataforma de bajo costo para experimentos acústicos.",
+        "embedded": "Diseñé y desarrollé el sistema embebido de adquisición basado en el ESP32, utilizando C, ESP-IDF y FreeRTOS para gestionar tareas concurrentes de adquisición y procesamiento.",
+        "analog": "El proyecto también involucró el diseño de la etapa analógica necesaria para conectar las señales de los hidrófonos con el sistema de adquisición digital. Esto incluyó circuitos de acondicionamiento de señal, amplificación, polarización y filtrado, diseñados y probados utilizando KiCad y LTspice.",
+        "signalProcessing": "En el ámbito del software, trabajé con técnicas de procesamiento de señales, incluyendo filtrado, filtrado adaptado y análisis espectral, utilizando Python y MATLAB para analizar y validar los datos adquiridos.",
+        "evolution": "El sistema evolucionó desde los primeros prototipos hasta diseños de PCB personalizados con soporte para adquisición multicanal, proporcionando experiencia práctica en todo el proceso, desde la captura física de señales y la electrónica hasta el software embebido y el análisis de datos."
+      },
+      "technologies": {
+        "title": "Tecnologías"
+      }
+    },
+    "slipperyHands": {
+      "title": "Slippery Hands",
+      "description": "Un juego de navegador desarrollado desde cero en JavaScript puro como un experimento en desarrollo de videojuegos de bajo nivel y arquitectura de software.",
+      "imageAlt": "Juego de navegador Slippery Hands",
+      "technologies": {
+        "gameDevelopment": "Desarrollo de videojuegos"
+      },
+      "links": {
+        "play": "Jugar"
+      },
+      "controls": "Moverse: W A S D · Saltar: K · Disparar: H",
+      "paragraphs": {
+        "intro": "Desarrollé este proyecto como un experimento en desarrollo de videojuegos utilizando JavaScript puro, después de trabajar principalmente con TypeScript. El objetivo era explorar un flujo de trabajo más sencillo y con un menor nivel de abstracción para videojuegos de navegador.",
+        "internship": {
+          "before": "El proyecto fue desarrollado durante dos meses entre trabajos, mientras me preparaba para realizar una pasantía en el ",
+          "lab": "Laboratory of Ocean Acoustics & Engineering",
+          "after": "."
+        },
+        "lambda": {
+          "before": "Su estructura estuvo influenciada por mi trabajo en C++ con ",
+          "after": ", con énfasis en comprender los sistemas subyacentes en lugar de depender de un motor o framework de videojuegos."
+        },
+        "gameplay": "El juego incluye movimiento básico del personaje, detección de colisiones, hitboxes y sistemas iniciales de animación. El concepto original estaba centrado en un sicario cuya arma rebotaba fuera de sus manos después de cada disparo."
+      }
+    }
+  },
+"navigation": { "title": "Navegación", "about": "Acerca de mí", "projects": "Proyectos", "milestones": "Línea de tiempo", "contact": "Contacto" },
+"header": { "home": "Inicio", "slipperyHands": "Slippery Hands", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" }
+}

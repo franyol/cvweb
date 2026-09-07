@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import fedeancoImage from "@/assets/images/SlipperyHands.png";
 import { ProjectCard } from "@/components/ProjectCard";
 
@@ -7,13 +9,15 @@ import {
 } from "react-icons/fa";
 
 export default function SlipperyHands() {
+  const { t } = useTranslation("home");
+
   return (
     <section id="slippery-hands">
       <ProjectCard
-        title="Slippery Hands"
-        description="A browser game built from scratch in vanilla JavaScript as an experiment in low-level game development and software architecture."
+        title={t("projects.slipperyHands.title")}
+        description={t("projects.slipperyHands.description")}
         image={fedeancoImage}
-        imageAlt="Slippery Hands browser game"
+        imageAlt={t("projects.slipperyHands.imageAlt")}
         imagePosition="right"
         content={
           <div className="space-y-6">
@@ -25,7 +29,7 @@ export default function SlipperyHands() {
 
               <span className="flex items-center gap-2">
                 <FaGamepad />
-                Game Development
+                {t("projects.slipperyHands.technologies.gameDevelopment")}
               </span>
             </div>
 
@@ -43,53 +47,41 @@ export default function SlipperyHands() {
                 href="/Slippery-Hands/"
                 className="underline underline-offset-4 hover:opacity-70"
               >
-                Play the Game
+                {t("projects.slipperyHands.links.play")}
               </a>
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Move: W A S D · Jump: K · Shoot: H
+              {t("projects.slipperyHands.controls")}
             </p>
 
-            <p>
-              I built this project as an experiment in{" "}
-              <strong>raw JavaScript game development</strong>, after primarily
-              working with TypeScript. The goal was to explore a simpler,
-              lower-abstraction workflow for browser games.
-            </p>
+            <p>{t("projects.slipperyHands.paragraphs.intro")}</p>
 
             <p>
-              The project was developed over two months between jobs while
-              preparing for an internship at{" "}
+              {t("projects.slipperyHands.paragraphs.internship.before")}
               <a
                 href="https://www.eecis.udel.edu/~badiey/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 hover:opacity-70"
               >
-                the Laboratory of Ocean Acoustics & Engineering
+                {t("projects.slipperyHands.paragraphs.internship.lab")}
               </a>
-              .
+              {t("projects.slipperyHands.paragraphs.internship.after")}
             </p>
 
             <p>
-              Its structure was influenced by my C++ work on{" "}
+              {t("projects.slipperyHands.paragraphs.lambda.before")}
               <a
                 href="#LambdaEngine"
                 className="underline underline-offset-4 hover:opacity-70"
               >
                 Lambda Engine
               </a>
-              , with an emphasis on understanding the underlying systems rather
-              than relying on a game engine or framework.
+              {t("projects.slipperyHands.paragraphs.lambda.after")}
             </p>
 
-            <p>
-              The game includes basic character movement, collision detection,
-              hitboxes, and early animation systems. The original concept
-              centered around a hitman whose weapon would bounce out of his
-              hands after every shot.
-            </p>
+            <p>{t("projects.slipperyHands.paragraphs.gameplay")}</p>
           </div>
         }
       />

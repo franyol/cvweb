@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type Milestone = {
   date: string;
@@ -9,44 +10,41 @@ type Milestone = {
 const MILESTONES: Milestone[] = [
   {
     date: "June 2026",
-    title: "Backend Developer at Mazda",
-    description:
-      "Joined Mazda as a Backend Developer, working on backend systems and web technologies.",
+    title: "milestones.items.mazda.title",
+    description: "milestones.items.mazda.description",
   },
   {
     date: "July 2025",
-    title: "Graduate Research Assistant",
-    description:
-      "Joined the Ocean Acoustics Laboratory at the University of Delaware as a Graduate Research Assistant, working under Dr. Mohsen Badiey.",
+    title: "milestones.items.research.title",
+    description: "milestones.items.research.description",
   },
   {
     date: "November 2022",
-    title: "B.Sc. in Electronics Engineering",
-    description:
-      "Earned a Bachelor of Science in Electronics Engineering from Pontificia Universidad Javeriana.",
+    title: "milestones.items.degree.title",
+    description: "milestones.items.degree.description",
   },
   {
     date: "July 2022",
-    title: "Robotics Engineer — Service Desk",
-    description:
-      "Joined robot.com as a Robotics Engineer on the Service Desk team.",
+    title: "milestones.items.robotics.title",
+    description: "milestones.items.robotics.description",
   },
   {
     date: "February 2022",
-    title: "Control Integration Engineer Intern",
-    description:
-      "Joined robot.com as a Control Integration Engineer Intern, working on robotics control and integration.",
+    title: "milestones.items.internship.title",
+    description: "milestones.items.internship.description",
   },
 ];
 
 const ITEMS_PER_PAGE = 4;
 
 export function Milestones() {
+  const { t } = useTranslation("home");
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(MILESTONES.length / ITEMS_PER_PAGE);
 
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+
   const currentMilestones = MILESTONES.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
@@ -56,7 +54,7 @@ export function Milestones() {
     <section id="milestones" className="px-6 py-24">
       <div className="mx-auto max-w-4xl">
         <h2 className="font-playfair text-5xl font-semibold tracking-tight">
-          Milestones
+          {t("milestones.title")}
         </h2>
 
         <div className="mt-10 space-y-6">
@@ -70,11 +68,11 @@ export function Milestones() {
               </time>
 
               <h3 className="mt-1 text-xl font-semibold">
-                {milestone.title}
+                {t(milestone.title)}
               </h3>
 
               <p className="mt-2 text-lg leading-relaxed text-muted-foreground">
-                {milestone.description}
+                {t(milestone.description)}
               </p>
             </article>
           ))}
@@ -88,7 +86,7 @@ export function Milestones() {
               onClick={() => setCurrentPage((page) => page - 1)}
               className="rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent disabled:pointer-events-none disabled:opacity-40"
             >
-              Previous
+              {t("milestones.previous")}
             </button>
 
             <span className="text-sm text-muted-foreground">
@@ -101,7 +99,7 @@ export function Milestones() {
               onClick={() => setCurrentPage((page) => page + 1)}
               className="rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent disabled:pointer-events-none disabled:opacity-40"
             >
-              Next
+              {t("milestones.next")}
             </button>
           </div>
         )}

@@ -1,15 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 export function Contact() {
+  const { t } = useTranslation("home");
+
   return (
     <section id="contact" className="px-6 py-24">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-playfair text-5xl font-semibold tracking-tight">
-          Contact
+          {t("contact.title")}
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          I am interested in research opportunities in robotics, AI,
-          cybersecurity, embedded computing, and related areas. For questions,
-          collaboration, or PhD-related enquiries, feel free to get in touch.
+          {t("contact.description")}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 text-lg">

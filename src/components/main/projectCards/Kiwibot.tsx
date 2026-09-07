@@ -1,49 +1,37 @@
+import { useTranslation } from "react-i18next";
+
 import kiwibotImage from "@/assets/images/kiwibot.jpg";
 import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Kiwibot() {
+  const { t } = useTranslation("home");
+
   return (
     <section id="kiwibot">
       <ProjectCard
-        title="Fleet Control Toolkit"
-        description="Robotics operations, automation, and software infrastructure for an autonomous delivery fleet."
+        title={t("projects.kiwibot.title")}
+        description={t("projects.kiwibot.description")}
         image={kiwibotImage}
-        imageAlt="Kiwibot autonomous delivery robot"
+        imageAlt={t("projects.kiwibot.imageAlt")}
         content={
           <>
-            <p>
-              At <strong>Kiwibot</strong>, I worked as a Service Desk Robotics
-              Engineer supporting an autonomous robotic fleet. My work involved
-              diagnosing failures across both the robots and the software
-              systems surrounding them.
+            <p>{t("projects.kiwibot.paragraphs.intro")}</p>
+
+            <p className="mt-4">
+              {t("projects.kiwibot.paragraphs.automation")}
             </p>
 
             <p className="mt-4">
-              I developed internal tools to automate repetitive debugging and
-              fleet-management workflows, combining telemetry, remote device
-              access, and software diagnostics into reproducible workflows.
+              {t("projects.kiwibot.paragraphs.debugging")}
             </p>
 
             <p className="mt-4">
-              One of these tools was an automated debugging pipeline built in
-              Python. It followed a{" "}
-              <strong>Trigger → Diagnose → Solution</strong> approach, using SSH
-              and robot telemetry to identify and resolve recurring issues. The
-              system reduced more than 50% of incoming service tickets through
-              automation.
-            </p>
-
-            <p className="mt-4">
-              I also worked on cloud-based fleet infrastructure, including
-              services deployed through GCP Cloud Run, device-management
-              workflows, and internal APIs. This gave me practical experience
-              with the software infrastructure required to operate autonomous
-              systems at scale.
+              {t("projects.kiwibot.paragraphs.infrastructure")}
             </p>
 
             <div className="mt-8">
               <h4 className="font-playfair text-2xl font-semibold">
-                Technologies
+                {t("projects.kiwibot.technologies.title")}
               </h4>
 
               <p className="mt-3 text-muted-foreground">

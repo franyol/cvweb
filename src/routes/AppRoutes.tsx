@@ -1,17 +1,34 @@
-import Status from "@/pages/Status";
-import Home from "../pages/Home";
-import { Routes, Route } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 
-export const navitems = {
-  "Home": "/",
-}
+import Home from "@/pages/Home";
+import Status from "@/pages/Status";
+import { LanguageLayout } from "@/components/LanguageLayout";
+import { LanguageRedirect } from "@/components/LanguageRedirect";
 
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/status" element={<Status />} />
-      <Route path="/Slippery-Hands" element={<iframe src="/Slippery-Hands/index.html" />} />
+      {/* Initial visit */}
+      <Route path="/" element={<LanguageRedirect />} />
+
+      {/* Localized application */}
+      <Route path="/:lang" element={<LanguageLayout />}>
+        <Route index element={<Home />} />
+        <Route path="status" element={<Status />} />
+
+        <Route
+          path="Slippery-Hands"
+          element={
+            <iframe
+              src="/Slippery-Hands/index.html"
+              className="h-screen w-full border-0"
+            />
+          }
+        />
+      </Route>
+
+      {/* Unknown routes */}
+      <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
   );
 }
