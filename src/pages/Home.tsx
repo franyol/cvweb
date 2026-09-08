@@ -29,6 +29,32 @@ import {
 const Home = () => {
   const { t } = useTranslation("home");
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Francisco Valbuena",
+    url: "https://franyol.com",
+    jobTitle: "Backend Developer",
+    description:
+      "Backend Developer specializing in TypeScript, Node.js, AWS, APIs, and serverless applications.",
+    sameAs: [
+      "https://github.com/franyol",
+      "https://www.linkedin.com/in/francisco-valbuena-ortega-90a56922b",
+    ],
+    knowsAbout: [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "AWS",
+      "AWS Lambda",
+      "API Gateway",
+      "REST APIs",
+      "Serverless Architecture",
+      "Docker",
+      "GitHub Actions",
+    ],
+  };
+
   const portfolioNavigation: Navigation = {
     items: [
       {
