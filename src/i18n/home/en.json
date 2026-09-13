@@ -25,6 +25,10 @@
     "previous": "Previous",
     "next": "Next",
     "items": {
+      "ghactionscert": {
+        "title": "GitHub Actions Certification",
+        "description": "Obtained the Microsoft's GitHub Actions Certification"
+      },
       "mazda": {
         "title": "Backend Developer at Mazda",
         "description": "Joined Mazda as a Backend Developer, working on backend systems and web technologies."

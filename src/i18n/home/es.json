@@ -25,6 +25,10 @@
     "previous": "Anterior",
     "next": "Siguiente",
     "items": {
+      "ghactionscert": {
+        "title": "Certificación GitHub Actions",
+        "description": "Obtuve la certificación de Microsoft en GitHub Actions"
+      },
       "mazda": {
         "title": "Desarrollador Backend en Mazda",
         "description": "Me incorporé a Mazda como Desarrollador Backend, trabajando en sistemas backend y tecnologías web."
