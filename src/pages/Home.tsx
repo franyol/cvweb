@@ -95,14 +95,23 @@ const Home = () => {
   };
 
   return (
-    <SidebarProvider>
-      <SideBar navigation={portfolioNavigation} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
 
-      <main className="w-full">
-        <SidebarTrigger className="fixed top-20 z-50 h-12 w-12" />
-        <Content />
-      </main>
-    </SidebarProvider>
+      <SidebarProvider>
+        <SideBar navigation={portfolioNavigation} />
+
+        <main className="w-full">
+          <SidebarTrigger className="fixed top-20 z-50 h-12 w-12" />
+          <Content />
+        </main>
+      </SidebarProvider>
+    </>
   );
 };
 
