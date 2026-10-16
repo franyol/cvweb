@@ -21,13 +21,19 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 
+import { SEO } from "@/components/seo/SEO";
+import { seoMetadata } from "@/seo/metadata";
+
 import {
   Navigation,
   SidebarNavigation,
 } from "@/components/sidebar/SidebarNavigation";
+import { useLocation } from "react-router";
 
 const Home = () => {
   const { t } = useTranslation("home");
+
+  const location = useLocation();
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -94,8 +100,18 @@ const Home = () => {
     ],
   };
 
+  const meta =
+    location.pathname.split("/")[1] === "es" ? seoMetadata.es.home : seoMetadata.en.home;
+
   return (
     <>
+      <SEO
+        title={meta.title}
+        description={meta.description}
+        canonical={meta.canonical}
+        lang="en"
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

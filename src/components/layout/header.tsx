@@ -13,7 +13,7 @@ const navItems = [
   },
   {
     label: "header.slipperyHands",
-    path: "/Slippery-Hands",
+    path: "/Slippery-Hands/",
   },
 ];
 
@@ -138,8 +138,8 @@ export function Header() {
       {/* Mobile navigation */}
       <nav
         className={`overflow-hidden border-t border-white/10 transition-all duration-300 md:hidden ${menuOpen
-            ? "max-h-40 opacity-100"
-            : "max-h-0 opacity-0"
+          ? "max-h-40 opacity-100"
+          : "max-h-0 opacity-0"
           }`}
       >
         <div className="flex flex-col px-6 py-3">

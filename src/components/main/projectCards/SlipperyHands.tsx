@@ -44,7 +44,7 @@ export default function SlipperyHands() {
               </a>
 
               <a
-                href="/Slippery-Hands/"
+                href="/en/Slippery-Hands/"
                 className="underline underline-offset-4 hover:opacity-70"
               >
                 {t("projects.slipperyHands.links.play")}
