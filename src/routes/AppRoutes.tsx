@@ -16,17 +16,17 @@ export function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="status" element={<Status />} />
 
-        <Route
-          path="Slippery-Hands"
-          element={
-            <iframe
-              src="/Slippery-Hands/index.html"
-              className="h-screen w-full border-0"
-            />
-          }
-        />
       </Route>
 
+      <Route
+        path="Slippery-Hands"
+        element={
+          <iframe
+            src="/Slippery-Hands/index.html"
+            className="h-screen w-full border-0"
+          />
+        }
+      />
       {/* Unknown routes */}
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
