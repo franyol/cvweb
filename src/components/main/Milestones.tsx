@@ -9,6 +9,11 @@ type Milestone = {
 
 const MILESTONES: Milestone[] = [
   {
+    date: "November 2026",
+    title: "milestones.items.awssolutionsarchitect.title",
+    description: "milestones.items.awssolutionsarchitect.description",
+  },
+  {
     date: "September 2026",
     title: "milestones.items.ghactionscert.title",
     description: "milestones.items.ghactionscert.description",

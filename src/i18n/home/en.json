@@ -1,4 +1,9 @@
 {
+  "hero": {
+    "title": "Francisco Valbuena",
+    "subtitle": "Electronics Engineer | DevOps & Cloud | Backend Developer",
+    "buttonLabel": "Explore My Services"
+  },
   "about": {
     "title": "About Me",
     "paragraphs": {
@@ -25,6 +30,10 @@
     "previous": "Previous",
     "next": "Next",
     "items": {
+      "awssolutionsarchitect": {
+        "title": "AWS Solutions Architect Professional Certification",
+        "description": "Obtained the AWS Solutions Architect Professional Certification"
+      },
       "ghactionscert": {
         "title": "GitHub Actions Certification",
         "description": "Obtained the Microsoft's GitHub Actions Certification"

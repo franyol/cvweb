@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router";
 
 import Home from "@/pages/Home";
+import Services from "@/pages/Services"
 import Status from "@/pages/Status";
 import { LanguageLayout } from "@/components/LanguageLayout";
 import { LanguageRedirect } from "@/components/LanguageRedirect";
@@ -15,6 +16,8 @@ export function AppRoutes() {
       <Route path="/:lang" element={<LanguageLayout />}>
         <Route index element={<Home />} />
         <Route path="status" element={<Status />} />
+
+        <Route path="services" element={<Services />} />
 
         <Route
           path="Slippery-Hands"

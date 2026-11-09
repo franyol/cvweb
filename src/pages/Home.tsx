@@ -29,6 +29,7 @@ import {
   SidebarNavigation,
 } from "@/components/sidebar/SidebarNavigation";
 import { useLocation } from "react-router";
+import Banner from "@/components/Banner";
 
 const Home = () => {
   const { t } = useTranslation("home");
@@ -101,7 +102,7 @@ const Home = () => {
   };
 
   const meta =
-    location.pathname.split("/")[1] === "es" ? seoMetadata.es.home : seoMetadata.en.home;
+    location.pathname.split("/")[0] === "es" ? seoMetadata.es.home : seoMetadata.en.home;
 
   return (
     <>
@@ -158,22 +159,23 @@ const SideBar = ({ navigation }: SideBarProps) => {
 };
 
 const Content = () => {
+  const { t } = useTranslation("home");
+
   return (
     <>
       {/* ===================== HERO ===================== */}
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcSet={heroImageMobile}
-        />
-        <img
-          src={heroImage}
-          alt="Hero"
-          style={{
-            width: "100%",
-          }}
-        />
-      </picture>
+      <Banner
+        desktopImage={heroImage}
+        mobileImage={heroImageMobile}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        button={{
+          label: t("hero.buttonLabel"),
+          href: `/${location.pathname.split("/")[1]}/services`
+        }}
+        contentPosition="right"
+        alt="Hero"
+      />
 
       <br />
 
