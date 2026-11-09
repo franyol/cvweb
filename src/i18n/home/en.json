@@ -135,5 +135,5 @@
     }
   },
 "navigation": { "title": "Navigation", "about": "About", "projects": "Projects", "milestones": "Milestones", "contact": "Contact" },
-"header": { "home": "Home", "slipperyHands": "Slippery Hands", "openMenu": "Open menu", "closeMenu": "Close menu" }
+"header": { "home": "Home", "services": "Request a Service", "slipperyHands": "Slippery Hands", "openMenu": "Open menu", "closeMenu": "Close menu" }
 }

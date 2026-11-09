@@ -1,0 +1,23 @@
+
+{
+  "hero": {
+    "title": "Hire Me",
+    "subtitle": "Bring your projects to life with technology consulting, AWS architecture and deployment, and full-stack application development."
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Professional certifications that validate my expertise in cloud architecture, DevOps, and modern software delivery.",
+    "issued": "Issued",
+    "expires": "Expires",
+    "showCredential": "View credential",
+    "badgePlaceholder": "Badge image"
+  },
+    "contactBanner": {
+    "eyebrow": "LET'S WORK TOGETHER",
+    "title": "Have a project in mind?",
+    "description": "Whether you need cloud consulting, AWS deployment, or full-stack development, I'd be happy to help bring your ideas to life. Get in touch and let's discuss your project.",
+    "button": "Get in Touch",
+    "subject": "Project Inquiry",
+    "message": "Hi Francisco, I'd like to discuss a project with you."
+  }
+}

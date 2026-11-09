@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Contrata mis servicios",
+    "subtitle": "Impulsa tus proyectos con servicios de consultoría tecnológica, arquitectura y despliegue en AWS, y desarrollo de aplicaciones full stack."
+  },
+    "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones profesionales que respaldan mis conocimientos en arquitectura cloud, DevOps y desarrollo de soluciones de software.",
+    "issued": "Expedida",
+    "expires": "Vence",
+    "showCredential": "Ver certificación",
+    "badgePlaceholder": "Imagen de la insignia"
+  },
+    "contactBanner": {
+    "eyebrow": "TRABAJEMOS JUNTOS",
+    "title": "¿Tienes un proyecto en mente?",
+    "description": "Ya sea que necesites consultoría cloud, despliegues en AWS o desarrollo de aplicaciones full stack, estaré encantado de ayudarte a hacer realidad tus ideas. Escríbeme y conversemos sobre tu proyecto.",
+    "button": "Hablemos",
+    "subject": "Consulta sobre un proyecto",
+    "message": "Hola Francisco, me gustaría conversar contigo sobre un proyecto."
+  }
+}

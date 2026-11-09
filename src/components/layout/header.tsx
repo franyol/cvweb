@@ -12,6 +12,10 @@ const navItems = [
     path: "/",
   },
   {
+    label: "header.services",
+    path: "/services/",
+  },
+  {
     label: "header.slipperyHands",
     path: "/Slippery-Hands/",
   },

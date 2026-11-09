@@ -135,5 +135,5 @@
     }
   },
 "navigation": { "title": "Navegación", "about": "Acerca de mí", "projects": "Proyectos", "milestones": "Línea de tiempo", "contact": "Contacto" },
-"header": { "home": "Inicio", "slipperyHands": "Slippery Hands", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" }
+"header": { "home": "Inicio", "services": "Contrata un Servicio", "slipperyHands": "Slippery Hands", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" }
 }

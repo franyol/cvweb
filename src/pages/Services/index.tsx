@@ -1,17 +1,28 @@
+import { useTranslation } from "react-i18next";
+
+import heroImage from "@/assets/images/services/services_hero.webp";
+import heroImageMobile from "@/assets/images/services/services_hero_mobile.webp";
+import Banner from "@/components/Banner";
+import { Certifications } from "@/components/services/Certifications";
+import { ContactBanner } from "@/components/services/ContactBanner";
+
+
 const Services = () => {
+  const { t } = useTranslation("services");
+
   return (
     <>
+      <Banner
+        desktopImage={heroImage}
+        mobileImage={heroImageMobile}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        contentPosition="left"
+        alt=""
+      />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      a
-      a
-      a
-      <h1>Contrata Un Servicio</h1>
-      Hello
+      <Certifications />
+      <ContactBanner />
     </>
   )
 }
