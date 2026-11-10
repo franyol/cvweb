@@ -18,5 +18,118 @@
     "button": "Hablemos",
     "subject": "Consulta sobre un proyecto",
     "message": "Hola Francisco, me gustaría conversar contigo sobre un proyecto."
+  },
+  "packages": {
+    "eyebrow": "LO QUE OFREZCO",
+    "title": "Paquetes de Servicios",
+    "description": "Soluciones tecnológicas prácticas para ayudarte a desarrollar, desplegar y escalar tus proyectos digitales.",
+    "contactButton": "Contáctame",
+    "categories": {
+      "development": "Desarrollo y Despliegue en la Nube",
+      "developmentDescription": "Construye y despliega aplicaciones, APIs y flujos de trabajo automatizados y escalables utilizando servicios de AWS.",
+      "migration": "Migración a la Nube y Optimización de Costos",
+      "migrationDescription": "Evalúa tu infraestructura actual, planifica migraciones a la nube e identifica oportunidades para optimizar los costos de AWS.",
+      "infrastructure": "Infraestructura y Seguridad en AWS",
+      "infrastructureDescription": "Evalúa tu entorno AWS, gobierno, redes y configuraciones de seguridad para fortalecer tu infraestructura en la nube."
+    },
+    "serverlessApi": {
+      "title": "Desarrollo de APIs Serverless",
+      "description": "Una solución backend ligera y escalable construida sobre AWS. Obtén una API REST con Amazon API Gateway y Lambda, conectada a una base de datos que se adapte a las necesidades de tu aplicación.",
+      "imageAlt": "Arquitectura de una API serverless",
+      "features": [
+        "Configuración de API REST con Amazon API Gateway",
+        "Desarrollo backend serverless con AWS Lambda",
+        "Integración de base de datos: Amazon DynamoDB o Amazon RDS",
+        "Configuración de entornos y variables",
+        "Despliegue en AWS",
+        "Documentación básica de la API"
+      ]
+    },
+    "lightsail": {
+      "title": "Despliegue en AWS Lightsail",
+      "description": "Lanza tu MVP, sitio web empresarial o aplicación pequeña con una infraestructura cloud económica y fácil de administrar. AWS Lightsail ofrece precios predecibles y una gestión simplificada del servidor, ideal para pequeñas empresas y proyectos en crecimiento.",
+      "imageAlt": "Infraestructura cloud con AWS Lightsail",
+      "features": [
+        "Configuración de instancias AWS Lightsail",
+        "Configuración y protección básica de servidores Linux",
+        "Despliegue de aplicaciones y configuración de entornos",
+        "Configuración de dominio y DNS",
+        "Configuración de certificados SSL",
+        "Monitoreo básico y documentación del despliegue"
+      ]
+    },
+    "workflowAutomation": {
+      "title": "Automatización de Procesos Cloud",
+      "description": "Automatiza procesos empresariales y orquesta tareas complejas utilizando servicios administrados de AWS. Construye flujos de trabajo confiables que combinan funciones serverless y aplicaciones contenerizadas para optimizar operaciones, integrar sistemas y reducir tareas manuales.",
+      "imageAlt": "Arquitectura de automatización de procesos en AWS",
+      "features": [
+        "Orquestación de flujos de trabajo con AWS Step Functions",
+        "Ejecución de tareas serverless con AWS Lambda",
+        "Procesamiento de cargas de trabajo contenerizadas con Amazon ECS",
+        "Integración con APIs y servicios externos",
+        "Programación y ejecución automática de tareas",
+        "Manejo de errores, reintentos y monitoreo de ejecuciones",
+        "Despliegue y documentación técnica"
+      ]
+    },
+    "vmMigration": {
+      "title": "Migración de Máquinas Virtuales a AWS EC2",
+      "description": "Migra tus máquinas virtuales existentes a AWS mediante un proceso estructurado. Comienza con una evaluación de infraestructura para analizar tu entorno actual, identificar dependencias, estimar costos en AWS y planificar una migración confiable a Amazon EC2.",
+      "imageAlt": "Arquitectura de migración de máquinas virtuales a AWS EC2",
+      "features": [
+        "Evaluación de la infraestructura de máquinas virtuales existente",
+        "Análisis de CPU, memoria, almacenamiento y red",
+        "Revisión de aplicaciones y dependencias del sistema",
+        "Recomendaciones de instancias Amazon EC2",
+        "Estrategia y planificación de la migración",
+        "Estimación de costos y oportunidades de optimización en AWS",
+        "Validación posterior a la migración y documentación"
+      ]
+    },
+    "costAudit": {
+      "title": "Auditoría y Optimización de Costos en AWS",
+      "description": "Obtén visibilidad sobre tus gastos en AWS e identifica oportunidades para reducir costos innecesarios. Realiza una evaluación de tu infraestructura cloud, utilización de recursos y patrones de facturación, acompañada de recomendaciones prácticas para mejorar la eficiencia de tus gastos.",
+      "imageAlt": "Panel de administración y optimización de costos en AWS",
+      "features": [
+        "Análisis de facturación y desglose de costos en AWS",
+        "Evaluación de utilización de recursos e infraestructura",
+        "Identificación de recursos inactivos o subutilizados",
+        "Recomendaciones de dimensionamiento y optimización de instancias EC2",
+        "Análisis de costos de almacenamiento y transferencia de datos",
+        "Revisión de modelos de precios y opciones de compra de AWS",
+        "Informe de auditoría con recomendaciones de optimización"
+      ]
+    },
+    "governanceAudit": {
+      "title": "Auditoría de AWS Organizations y Landing Zone",
+      "description": "Evalúa tu entorno multi-cuenta de AWS para mejorar la seguridad, gobernanza y control de acceso. Analiza la estructura de AWS Organizations, la configuración de AWS Control Tower, los permisos de IAM y las políticas de control de servicios (SCP) para identificar brechas de seguridad y establecer una administración consistente de tu infraestructura cloud.",
+      "imageAlt": "Arquitectura multi-cuenta de AWS Organizations y Control Tower",
+      "features": [
+        "Evaluación de la estructura de AWS Organizations y administración de cuentas",
+        "Revisión de la jerarquía de Organizational Units (OUs) y organización de cuentas",
+        "Auditoría de la configuración de AWS Control Tower Landing Zone",
+        "Evaluación de usuarios, roles y políticas de permisos IAM",
+        "Revisión y recomendaciones sobre Service Control Policies (SCPs)",
+        "Evaluación de accesos entre cuentas y límites de permisos",
+        "Análisis de buenas prácticas de seguridad y gobernanza",
+        "Informe de auditoría con recomendaciones priorizadas"
+      ]
+    },
+    "securityAudit": {
+      "title": "Auditoría de Seguridad, Redes y WAF en AWS",
+      "description": "Auditoría técnica de tu infraestructura AWS enfocada en identificar vulnerabilidades de seguridad, configuraciones incorrectas de red y brechas en la protección de aplicaciones. Se revisa la arquitectura VPC, los Security Groups, las Network ACL y las reglas de AWS WAF para fortalecer tu infraestructura y reducir la exposición ante posibles ataques.",
+      "imageAlt": "Auditoría de arquitectura de seguridad, redes y WAF en AWS",
+      "features": [
+        "Revisión de arquitectura VPC y segmentación de red",
+        "Configuración de subredes públicas y privadas",
+        "Route Tables, Internet Gateways y NAT Gateways",
+        "Revisión de Security Groups y Network ACL",
+        "Evaluación de Load Balancers y exposición de red",
+        "Revisión de Web ACL, reglas y grupos de reglas administradas de AWS WAF",
+        "Reglas basadas en tasa de solicitudes, restricciones por IP y protección de aplicaciones",
+        "Identificación de permisos demasiado amplios y posibles brechas de seguridad",
+        "Informe de auditoría con recomendaciones priorizadas"
+      ]
+    }
   }
 }

@@ -5,6 +5,7 @@ import heroImageMobile from "@/assets/images/services/services_hero_mobile.webp"
 import Banner from "@/components/Banner";
 import { Certifications } from "@/components/services/Certifications";
 import { ContactBanner } from "@/components/services/ContactBanner";
+import { PackagesSection } from "@/components/services/Packages";
 
 
 const Services = () => {
@@ -22,6 +23,7 @@ const Services = () => {
       />
       <br />
       <Certifications />
+      <PackagesSection />
       <ContactBanner />
     </>
   )

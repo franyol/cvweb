@@ -19,5 +19,118 @@
     "button": "Get in Touch",
     "subject": "Project Inquiry",
     "message": "Hi Francisco, I'd like to discuss a project with you."
+  },
+  "packages": {
+    "eyebrow": "WHAT I OFFER",
+    "title": "Service Packages",
+    "description": "Practical technology solutions designed to help you build, deploy, and scale your digital projects.",
+    "contactButton": "Get in Touch",
+    "categories": {
+      "development": "Cloud Development & Deployment",
+      "developmentDescription": "Build and deploy scalable applications, APIs, and automated workflows using AWS cloud services.",
+      "migration": "Cloud Migration & Cost Optimization",
+      "migrationDescription": "Evaluate existing infrastructure, plan cloud migrations, and identify opportunities to optimize AWS spending.",
+      "infrastructure": "AWS Infrastructure & Security",
+      "infrastructureDescription": "Assess your AWS environment, governance, networking, and security configurations to strengthen your cloud infrastructure."
+    },
+    "serverlessApi": {
+      "title": "Serverless API Development",
+      "description": "A lightweight, scalable backend solution built on AWS. Get a REST API powered by API Gateway and Lambda, connected to a database that fits your application's needs.",
+      "imageAlt": "Serverless API architecture",
+      "features": [
+        "REST API setup using Amazon API Gateway",
+        "Serverless backend development with AWS Lambda",
+        "Database integration: Amazon DynamoDB or Amazon RDS",
+        "Environment and configuration setup",
+        "Deployment to AWS",
+        "Basic API documentation"
+      ]
+    },
+    "lightsail": {
+      "title": "AWS Lightsail Deployment",
+      "description": "Launch your MVP, business website, or small application with an affordable and easy-to-manage cloud infrastructure. AWS Lightsail provides predictable pricing and simplified server management, making it a great starting point for small businesses and growing projects.",
+      "imageAlt": "AWS Lightsail cloud infrastructure",
+      "features": [
+        "AWS Lightsail instance configuration",
+        "Linux server setup and hardening",
+        "Application deployment and environment configuration",
+        "Domain and DNS configuration",
+        "SSL certificate setup",
+        "Basic monitoring and deployment documentation"
+      ]
+    },
+    "workflowAutomation": {
+      "title": "Cloud Workflow Automation",
+      "description": "Automate business processes and orchestrate complex tasks using AWS managed services. Build reliable workflows that combine serverless functions and containerized applications to streamline operations, integrate systems, and reduce manual work.",
+      "imageAlt": "AWS cloud workflow automation architecture",
+      "features": [
+        "Workflow orchestration with AWS Step Functions",
+        "Serverless task execution using AWS Lambda",
+        "Containerized workloads with Amazon ECS",
+        "Integration with APIs and external services",
+        "Automated task scheduling and execution",
+        "Error handling, retries, and execution monitoring",
+        "Deployment and technical documentation"
+      ]
+    },
+    "vmMigration": {
+      "title": "VM to AWS EC2 Migration & Audit",
+      "description": "Move your existing virtual machines to AWS with a structured migration approach. Start with an infrastructure assessment to evaluate your current environment, identify dependencies, estimate AWS costs, and plan a reliable migration to Amazon EC2.",
+      "imageAlt": "Virtual machine migration to AWS EC2 architecture",
+      "features": [
+        "Existing VM infrastructure assessment",
+        "CPU, memory, storage, and network analysis",
+        "Application and system dependency review",
+        "AWS EC2 instance recommendations",
+        "Migration strategy and execution planning",
+        "AWS cost estimation and optimization opportunities",
+        "Post-migration validation and documentation"
+      ]
+    },
+    "costAudit": {
+      "title": "AWS Cost Optimization & Audit",
+      "description": "Gain visibility into your AWS spending and discover opportunities to reduce unnecessary costs. Get a comprehensive review of your cloud infrastructure, resource utilization, and billing patterns, along with actionable recommendations to improve cost efficiency.",
+      "imageAlt": "AWS cloud cost management and optimization dashboard",
+      "features": [
+        "AWS billing and cost breakdown analysis",
+        "Resource utilization and infrastructure assessment",
+        "Identification of idle and underutilized resources",
+        "EC2 instance sizing and optimization recommendations",
+        "Storage and data transfer cost analysis",
+        "AWS pricing model and purchasing options review",
+        "Cost optimization recommendations and audit report"
+      ]
+    },
+    "governanceAudit": {
+      "title": "AWS Organizations & Landing Zone Audit",
+      "description": "Assess your AWS multi-account environment to improve security, governance, and access control. Review your AWS Organizations structure, Control Tower landing zone configuration, IAM permissions, and Service Control Policies to identify security gaps and establish consistent governance across your cloud infrastructure.",
+      "imageAlt": "AWS Organizations and Control Tower multi-account architecture",
+      "features": [
+        "AWS Organizations structure and account management assessment",
+        "Organizational Units (OUs) hierarchy and account organization review",
+        "AWS Control Tower landing zone configuration audit",
+        "IAM users, roles, policies, and permission assessment",
+        "Service Control Policies (SCPs) review and recommendations",
+        "Cross-account access and permission boundary assessment",
+        "Security and governance best practices evaluation",
+        "Audit report with prioritized recommendations"
+      ]
+    },
+    "securityAudit": {
+      "title": "AWS Security, Networking & WAF Audit",
+      "description": "A technical audit of your AWS infrastructure focused on identifying security vulnerabilities, network misconfigurations, and gaps in application protection. Review VPC architecture, security groups, network ACLs, and AWS WAF rules to strengthen your infrastructure and reduce exposure to potential attacks.",
+      "imageAlt": "AWS security, networking, and WAF architecture audit",
+      "features": [
+        "VPC architecture and network segmentation review",
+        "Public and private subnet configuration",
+        "Route tables, Internet Gateways, and NAT Gateways",
+        "Security Groups and Network ACLs review",
+        "Load Balancer and network exposure assessment",
+        "AWS WAF Web ACL, rules, and managed rule groups review",
+        "Rate-based rules, IP restrictions, and application-layer protection",
+        "Identification of overly permissive access and potential security gaps",
+        "Prioritized recommendations and audit report"
+      ]
+    }
   }
 }
